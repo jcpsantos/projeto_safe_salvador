@@ -12,22 +12,22 @@
         <script src="js/modernizr-custom.js"></script>
     </head>
     <body class="demo-2">
-        <header>
+        <header id="home">
             <div class="navbar-fixed">
                 <nav class="nav-color">
                   <div class="nav-wrapper">
-                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#home" class="brand-logo">Logo</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Analise de Dados</a></li>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#graficos">Analise de Dados</a></li>
                     </ul>
                   </div>
                 </nav>
             </div>
             <ul class="sidenav" id="mobile-demo">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Analise de Dados</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#graficos">Analise de Dados</a></li>
             </ul>
         </header>
         <main>
@@ -50,7 +50,7 @@
                     </div>
                     <div class="project">
                         <div class="text">
-                            <h1>De 2014 para 2017 o Roubo de ônibus teve um aumento médio de 35,5%.</h1>
+                            <h1>De 2014 para 2017 o Roubo de ônibus teve um aumento médio de 35,5%</h1>
                         </div>
                     </div>
                     <nav class="arrows arrows-special">
@@ -83,7 +83,7 @@
                     povo tome esse conhecimento e possa cobrar das autoridades devidas soluções. </p>
                 </div>
             </section>
-            <section><!--Gráficos-->
+            <section id='graficos'><!--Gráficos-->
                 <div class="container">
                     <h2 class="center-align">Dados Gerais da Violência em Salvador de 2014 até 2017</h2>
                     <div id="chart" style="min-height: 300px;"></div>
@@ -101,46 +101,81 @@
                 </div>
                 <div class="container">
                     <h2 class="center-align">Evolução por tipo de crime durante os períodos pesquisado(2014 a 2017)</h2>
-                    <ul class="collapsible">
-                        <li>
-                            <div class="collapsible-header">Homicídio Doloso</div>
-                            <div class="collapsible-body">
-                                <div id="homicidio" style="min-height: 300px;"></div>
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <div class="card black">
+                                <div class="card-content ">
+                                    <span class="card-title white-text">Homicídio Doloso</span>
+                                    <div id="homicidio" style="min-height: 300px;"></div>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Lesão Corporal Seguida de Morte</div>
-                            <div class="collapsible-body">
-                                <div id="morte" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">Lesão Corporal seguida de Morte</span>
+                                    <div id="morte" style="min-height: 300px;"></div>
+                                </div>
                             </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Latrocínio</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Tentativa de Homicídio</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Estupro</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Roubo de Ônibus</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Roubo de Veículo</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header">Furto de Veículo</div>
-                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                        </li>
-                    </ul>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">Latrocínio</span>
+                                    <div id="latrocinio" style="min-height: 300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card black">
+                                <div class="card-content ">
+                                    <span class="card-title white-text">Tentativa de Homicídio</span>
+                                    <div id="tentativa" style="min-height: 300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card black">
+                                <div class="card-content ">
+                                    <span class="card-title white-text">Estupro</span>
+                                    <div id="estupro" style="min-height: 300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">Roubo de Ônibus</span>
+                                    <div id="onibus" style="min-height: 300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title">Roubo de Veículo</span>
+                                    <div id="rveiculo" style="min-height: 300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 m6">
+                            <div class="card black">
+                                <div class="card-content ">
+                                    <span class="card-title white-text">Furto de Veículo</span>
+                                    <div id="fveiculo" style="min-height: 300px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <article class="frase">
+                            Se um ladrão toma algo que pertence a outra pessoa sem estabelecer contato com ela, 
+                            comete furto. Se houver contato com a vítima, violência ou ameaça, é roubo – assalto é 
+                            um termo que não existe no direito, mas equivale ao roubo.
+                            Fonte: <a  class="link" href="https://super.abril.com.br/mundo-estranho/qual-a-diferenca-entre-furto-roubo-e-assalto/">Mundo Estranho</a>
+                    </article>
                 </div>
             </section>
+            <!--Estrutura dos Modais-->
         </main>
         <footer>
 

@@ -3,11 +3,6 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
   });
 
-  //Collapsible
-  $(document).ready(function(){
-    $('.collapsible').collapsible();
-  });
-
   //Grafico Geral
   var options = {
     chart: {
@@ -226,7 +221,7 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                 enabled: false,
             },
             series: [{
-                name: 'Homicídios',
+                name: 'Homicídio Doloso',
                 data: [1321, 1290, 1289, 1346]
             }],
             xaxis: {
@@ -271,7 +266,7 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                 enabled: false,
             },
             series: [{
-                name: 'Lesão Corporal Seguida por Morte',
+                name: 'Lesão Corporal seguida de Morte',
                 data: [26, 38, 22, 12]
             }],
             xaxis: {
@@ -291,4 +286,272 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
         );
 
         chart.render();
+
+        //Gráfico Latrocinio
+
+        var colors = ['#000000', '#607d8b', '#9e9e9e', '#795548'];
+        var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+                events: {
+                    click: function(chart, w, e) {
+                        console.log(chart, w, e )
+                    }
+                },
+            },
+            colors: colors,
+            plotOptions: {
+                bar: {
+                    columnWidth: '45%',
+                    distributed: true
+                }
+            },
+            dataLabels: {
+                enabled: false,
+            },
+            series: [{
+                name: 'Latrocínio',
+                data: [50, 64, 38, 36]
+            }],
+            xaxis: {
+                categories: ['2014', '2015', '2016', '2017'],
+                labels: {
+                    style: {
+                        colors: colors,
+                        fontSize: '14px'
+                    }
+                }
+            }
+        }
+
+        var chart = new ApexCharts(
+            document.querySelector("#latrocinio"),
+            options
+        );
+
+        chart.render();
+
+        //Gráfico Tentativa de Homicídio
+        var colors = ['#673ab7', '#3f51b5', '#2196f3', '#03a9f4'];
+        var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+                events: {
+                    click: function(chart, w, e) {
+                        console.log(chart, w, e )
+                    }
+                },
+            },
+            colors: colors,
+            plotOptions: {
+                bar: {
+                    columnWidth: '45%',
+                    distributed: true
+                }
+            },
+            dataLabels: {
+                enabled: false,
+            },
+            series: [{
+                name: 'Tentativa de Homicídio',
+                data: [712, 561, 469, 523]
+            }],
+            xaxis: {
+                categories: ['2014', '2015', '2016', '2017'],
+                labels: {
+                    style: {
+                        colors: colors,
+                        fontSize: '14px'
+                    }
+                }
+            }
+        }
+
+        var chart_tentativa = new ApexCharts(
+            document.querySelector("#tentativa"),
+            options
+        );
+
+        chart_tentativa.render();
+
+        //Gráfico Estupro
+
+ var colors = ['#ff5722', '#8d6e63', '#bdbdbd', '#78909c'];
+        var options = {
+            chart: {
+                height: 350,
+                type: 'bar',
+                events: {
+                    click: function(chart, w, e) {
+                        console.log(chart, w, e )
+                    }
+                },
+            },
+            colors: colors,
+            plotOptions: {
+                bar: {
+                    columnWidth: '45%',
+                    distributed: true
+                }
+            },
+            dataLabels: {
+                enabled: false,
+            },
+            series: [{
+                name: 'Estupro',
+                data: [532, 531, 447, 576]
+            }],
+            xaxis: {
+                categories: ['2014', '2015', '2016', '2017'],
+                labels: {
+                    style: {
+                        colors: colors,
+                        fontSize: '14px'
+                    }
+                }
+            }
+        }
+
+        var chart_estupro = new ApexCharts(
+            document.querySelector("#estupro"),
+            options
+        );
+
+        chart_estupro.render();
+
+        //Gráfico Roubo de ônibus
+        
+ var colors = ['#03a9f4', '#00bcd4', '#009688', '#4caf50'];
+ var options = {
+     chart: {
+         height: 350,
+         type: 'bar',
+         events: {
+             click: function(chart, w, e) {
+                 console.log(chart, w, e )
+             }
+         },
+     },
+     colors: colors,
+     plotOptions: {
+         bar: {
+             columnWidth: '45%',
+             distributed: true
+         }
+     },
+     dataLabels: {
+         enabled: false,
+     },
+     series: [{
+         name: 'Roubo de Ônibus',
+         data: [1929, 2561, 2615, 2615]
+     }],
+     xaxis: {
+         categories: ['2014', '2015', '2016', '2017'],
+         labels: {
+             style: {
+                 colors: colors,
+                 fontSize: '14px'
+             }
+         }
+     }
+ }
+
+ var chart_onibus = new ApexCharts(
+     document.querySelector("#onibus"),
+     options
+ );
+
+ chart_onibus.render();
+
+ //Gráfico Roubo de Veículo
+ var colors = ['#f57f17', '#ffc107', '#ff9800', '#ff5722'];
+ var options = {
+     chart: {
+         height: 350,
+         type: 'bar',
+         events: {
+             click: function(chart, w, e) {
+                 console.log(chart, w, e )
+             }
+         },
+     },
+     colors: colors,
+     plotOptions: {
+         bar: {
+             columnWidth: '45%',
+             distributed: true
+         }
+     },
+     dataLabels: {
+         enabled: false,
+     },
+     series: [{
+         name: 'Roubo de Veículo',
+         data: [6373, 6537, 6219, 5733]
+     }],
+     xaxis: {
+         categories: ['2014', '2015', '2016', '2017'],
+         labels: {
+             style: {
+                 colors: colors,
+                 fontSize: '14px'
+             }
+         }
+     }
+ }
+
+ var chart_rveiculo = new ApexCharts(
+     document.querySelector("#rveiculo"),
+     options
+ );
+
+ chart_rveiculo.render();
+
+ //Gráfico Roubo de Veículo
+ var colors = ['#4caf50', '#8bc34a', '#cddc39', '#ffeb3b'];
+ var options = {
+     chart: {
+         height: 350,
+         type: 'bar',
+         events: {
+             click: function(chart, w, e) {
+                 console.log(chart, w, e )
+             }
+         },
+     },
+     colors: colors,
+     plotOptions: {
+         bar: {
+             columnWidth: '45%',
+             distributed: true
+         }
+     },
+     dataLabels: {
+         enabled: false,
+     },
+     series: [{
+         name: 'Furto de Veículo',
+         data: [1752, 1717, 1642, 1565]
+     }],
+     xaxis: {
+         categories: ['2014', '2015', '2016', '2017'],
+         labels: {
+             style: {
+                 colors: colors,
+                 fontSize: '14px'
+             }
+         }
+     }
+ }
+
+ var chart_fveiculo = new ApexCharts(
+     document.querySelector("#fveiculo"),
+     options
+ );
+
+ chart_fveiculo.render();
+
     
