@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js" manifest="demo.appcache">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Juan Caio">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> <!--Materialize-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Icones Google-->
+        <link rel="stylesheet" type="text/css" href="css/component.css" /><!--Slider Component-->
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="js/modernizr-custom.js"></script>
+    </head>
+    <body class="demo-2">
+        <header>
+            <div class="navbar-fixed">
+                <nav class="nav-color">
+                  <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Analise de Dados</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Analise de Dados</a></li>
+            </ul>
+        </header>
+        <main>
+            <section><!--Slide-->
+                <div class="page-view">
+                    <div class="project">
+                        <div class="text">
+                            <h1>Em 2017 foram registrados 579 casos de Estupro em Salvador</h1>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="text">
+                            <h1>Em 2017 foram registrados 1394 casos de Assassinato</h1>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="text">
+                            <h1>1346 casos de Homicídio registrados em 2017</h1>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="text">
+                            <h1>De 2014 para 2017 o Roubo de ônibus teve um aumento médio de 35,5%.</h1>
+                        </div>
+                    </div>
+                    <nav class="arrows arrows-special">
+                        <div class="arrow previous">
+                            <svg viewBox="208.3 352 4.2 6.4">
+                                <polygon class="st0" points="212.1,357.3 211.5,358 208.7,355.1 211.5,352.3 212.1,353 209.9,355.1"/>
+                            </svg>
+                        </div>
+                        <div class="arrow next">
+                            <svg viewBox="208.3 352 4.2 6.4">
+                                <polygon class="st0" points="212.1,357.3 211.5,358 208.7,355.1 211.5,352.3 212.1,353 209.9,355.1"/>
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <section class="apresentacao"><!--sobre-->
+                <div class="container">
+                    <h1 class="center-align">Analise de Dados da Criminalidade em Salvador</h1>
+                    <p>A violência no Brasil é um problema persistente que atinge direta ou indiretamente a 
+                        população. O país tem níveis acima da média mundial no que se refere a crimes violentos, 
+                        com níveis particularmente altos no tocante a violência armada e homicídios. Em 2016, o 
+                        Brasil alcançou a marca histórica de 62 517 homicídios, segundo informações do Ministério 
+                        da Saúde. Isso equivale a uma taxa de 30,3 mortes para cada 100 mil habitantes, uma das 
+                        mais altas taxas de homicídios intencionais do mundo.O limite considerado como suportável 
+                        pela Organização Mundial da Saúde (OMS) é de 10 homicídios por 100 mil habitantes.
+                        fonte: Wikipedia</p>
+                    <p>Esse projeto foi pensado para mostrar de forma visual e bastante pratica e facil para 
+                        a população de Salvador como anda os índices de criminalidade da cidade, afim de que o 
+                    povo tome esse conhecimento e possa cobrar das autoridades devidas soluções. </p>
+                </div>
+            </section>
+            <section><!--Gráficos-->
+                <div class="container">
+                    <h2 class="center-align">Dados Gerais da Violência em Salvador de 2014 até 2017</h2>
+                    <div id="chart" style="min-height: 300px;"></div>
+                </div>
+                <div class="container">
+                    <h2 class="center-align">Total de Crimes e total de Mortes em Salvador de 2014 até 2017</h2>
+                    <div class="row">
+                        <div class="col s12 m6 l6 xl6">
+                            <div id="total_crimes" style="min-height: 300px;"></div>
+                        </div>
+                        <div class="col s12 m6 l6 xl6">
+                            <div id="total_mortes" style="min-height: 300px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 class="center-align">Evolução por tipo de crime durante os períodos pesquisado(2014 a 2017)</h2>
+                    <ul class="collapsible">
+                        <li>
+                            <div class="collapsible-header">Homicídio Doloso</div>
+                            <div class="collapsible-body">
+                                <div id="homicidio" style="min-height: 300px;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Lesão Corporal Seguida de Morte</div>
+                            <div class="collapsible-body">
+                                <div id="morte" style="min-height: 300px;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Latrocínio</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Tentativa de Homicídio</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Estupro</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Roubo de Ônibus</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Roubo de Veículo</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">Furto de Veículo</div>
+                            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--JQuery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><!--Materialize-->
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script><!--ApexCharts-->
+        <script src="js/javascript.js"></script>
+        <script src="js/zepto.min.js"></script> <!--Zepto-->
+		<script src="js/imagesloaded.pkgd.min.js"></script><!--Images loaded-->
+		<script src="js/demo.js"></script><!--Slider-->
+    </body>
+</html>
