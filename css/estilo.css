@@ -8,6 +8,10 @@ header{
     max-width: 100%;
 }
 
+footer{
+    margin-top: 7vh;
+}
+
 /*Menu*/
 .nav-color{
     background-color: black;
