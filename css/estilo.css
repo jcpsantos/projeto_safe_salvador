@@ -17,6 +17,10 @@ footer{
     background-color: black;
 }
 
+.logo{
+    width: 160px;
+}
+
 /*Slider*/
 .arrows-special{
     background-color: transparent;
@@ -51,6 +55,10 @@ a.link:hover{
 
     h2{
         font-size: 2.8rem;
+    }
+
+    .logo {
+        width: 135px;
     }
 }
 

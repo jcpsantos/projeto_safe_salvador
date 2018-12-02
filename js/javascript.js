@@ -554,4 +554,15 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
 
  chart_fveiculo.render();
 
+ //Suavidade no Scroll da página index
+ $('.scrollSuave a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+        
+    $('html, body').animate({ 
+      scrollTop: targetOffset - 100
+    }, 500);  
+  });  
+
     

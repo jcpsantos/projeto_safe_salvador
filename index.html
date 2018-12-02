@@ -9,25 +9,29 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!--Icones Google-->
         <link rel="stylesheet" type="text/css" href="css/component.css" /><!--Slider Component-->
         <link rel="stylesheet" href="css/estilo.css">
+        <!--Favicon-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <script src="js/modernizr-custom.js"></script>
     </head>
     <body class="demo-2">
         <header id="home">
             <div class="navbar-fixed">
                 <nav class="nav-color">
-                  <div class="nav-wrapper">
-                    <a href="#home" class="brand-logo">Logo</a>
+                  <div class="nav-wrapper scrollSuave">
+                    <a href="#home" class="brand-logo"><img src="img/logo_projeto_seguranca_salvador.png" alt="Projeto Segurança Salvador" class="logo"></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                       <li><a href="#home">Home</a></li>
-                      <li><a href="#graficos">Analise de Dados</a></li>
+                      <li><a href="#sobre">Sobre</a></li>
+                      <li><a href="#graficos">Análise de Dados</a></li>
                     </ul>
                   </div>
                 </nav>
             </div>
-            <ul class="sidenav" id="mobile-demo">
+            <ul class="sidenav scrollSuave" id="mobile-demo">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#graficos">Analise de Dados</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#graficos">Análise de Dados</a></li>
             </ul>
         </header>
         <main>
@@ -67,9 +71,9 @@
                     </nav>
                 </div>
             </section>
-            <section class="apresentacao"><!--sobre-->
+            <section class="apresentacao" id="sobre"><!--sobre-->
                 <div class="container">
-                    <h1 class="center-align">Analise de Dados da Criminalidade em Salvador</h1>
+                    <h1 class="center-align">Análise de Dados da Criminalidade em Salvador</h1>
                     <p>A violência no Brasil é um problema persistente que atinge direta ou indiretamente a 
                         população. O país tem níveis acima da média mundial no que se refere a crimes violentos, 
                         com níveis particularmente altos no tocante a violência armada e homicídios. Em 2016, o 
@@ -77,7 +81,7 @@
                         da Saúde. Isso equivale a uma taxa de 30,3 mortes para cada 100 mil habitantes, uma das 
                         mais altas taxas de homicídios intencionais do mundo.O limite considerado como suportável 
                         pela Organização Mundial da Saúde (OMS) é de 10 homicídios por 100 mil habitantes.
-                        fonte: Wikipedia</p>
+                        Fonte: <a class="link" href="https://pt.wikipedia.org/wiki/Viol%C3%AAncia_no_Brasil" target="_blank">Wikipedia</a></p>
                     <p>Esse projeto foi pensado para mostrar de forma visual e bastante pratica e facil para 
                         a população de Salvador como anda os índices de criminalidade da cidade, afim de que o 
                     povo tome esse conhecimento e possa cobrar das autoridades devidas soluções. </p>
@@ -171,7 +175,7 @@
                             Se um ladrão toma algo que pertence a outra pessoa sem estabelecer contato com ela, 
                             comete furto. Se houver contato com a vítima, violência ou ameaça, é roubo – assalto é 
                             um termo que não existe no direito, mas equivale ao roubo.
-                            Fonte: <a  class="link" href="https://super.abril.com.br/mundo-estranho/qual-a-diferenca-entre-furto-roubo-e-assalto/">Mundo Estranho</a>
+                            Fonte: <a  class="link" href="https://super.abril.com.br/mundo-estranho/qual-a-diferenca-entre-furto-roubo-e-assalto/" target="_blank">Mundo Estranho</a>
                     </article>
                 </div>
             </section>
@@ -181,15 +185,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
-                        <h5>Veja como foi realizado o processo de analise clicando abaixo</h5>
+                        <h5>Veja como foi realizado o processo de análise clicando abaixo</h5>
                         <div class="center-align">
-                            <a href="dados_seg_pub_ssa.html"><img src="img/icons8-link-100.png"></a>
+                            <a href="dados_seg_pub_ssa.html"><img src="img/icons8-link-100.png" alt="Jupyter Notebook"></a>
                         </div>
                     </div>
                     <div class="col l6 s12">
                         <h5>Quer colaborar com nosso projeto? Acesse nosso GitHub</h5>
                         <div class="center-align">
-                            <a href="https://github.com/jcpsantos/projeto_safe_salvador" ><img src="img/icons8-github-2-filled-100.png"></a>
+                            <a href="https://github.com/jcpsantos/projeto_safe_salvador" ><img src="img/icons8-github-2-filled-100.png" alt="Github"></a>
                         </div>
                     </div>
                 </div>

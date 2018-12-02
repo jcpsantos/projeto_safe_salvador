@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="css/estilo.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
+<!--Favicon-->
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 <style type="text/css">
     /*!
 *
@@ -11743,6 +11744,13 @@ footer h5{
   margin: 1.0933333333rem 0 .656rem 0;
 }
 
+@media only screen and (min-width: 601px){
+  nav{
+    height: 77px;
+  }
+
+}
+
 div#notebook {
   overflow: visible;
   border-top: none;
@@ -11791,19 +11799,21 @@ div#notebook {
     <header id="home">
         <div class="navbar-fixed">
             <nav class="nav-color">
-              <div class="nav-wrapper">
-                <a href="#home" class="brand-logo">Logo</a>
+              <div class="nav-wrapper scrollSuave">
+                  <a href="index.html" class="brand-logo"><img src="img/logo_projeto_seguranca_salvador.png" alt="Projeto Segurança Salvador" class="logo"></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html#graficos">Analise de Dados</a></li>
+                  <li><a href="index.html#sobre">Sobre</a></li>
+                  <li><a href="index.html#graficos">Análise de Dados</a></li>
                 </ul>
               </div>
             </nav>
         </div>
-        <ul class="sidenav" id="mobile-demo">
+        <ul class="sidenav scrollSuave" id="mobile-demo">
             <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#graficos">Analise de Dados</a></li>
+            <li><a href="index.html#sobre">Sobre</a></li>
+            <li><a href="index.html#graficos">Análise de Dados</a></li>
         </ul>
     </header>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
@@ -11813,7 +11823,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<center><h1 style="color: #f44336;">Analise de Dados da Criminalidade em Salvador</h1></center>
+<center><h1 style="color: #f44336;">Análise de Dados da Criminalidade em Salvador</h1></center>
 </div>
 </div>
 </div>
@@ -11822,7 +11832,7 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><p> A violência no Brasil é um problema persistente que atinge direta ou indiretamente a população. O país tem níveis acima da média mundial no que se refere a crimes violentos, com níveis particularmente altos no tocante a violência armada e homicídios. Em 2016, o Brasil alcançou a marca histórica de 62 517 homicídios, segundo informações do Ministério da Saúde. Isso equivale a uma taxa de 30,3 mortes para cada 100 mil habitantes, uma das mais altas taxas de homicídios intencionais do mundo.O limite considerado como suportável pela Organização Mundial da Saúde (OMS) é de 10 homicídios por 100 mil habitantes.</p>
-fonte: <a href='https://pt.wikipedia.org/wiki/Viol%C3%AAncia_no_Brasil'>Wikipedia</a></p>
+fonte: <a href='https://pt.wikipedia.org/wiki/Viol%C3%AAncia_no_Brasil' target="_blank" >Wikipedia</a></p>
 
 </div>
 </div>
@@ -16215,7 +16225,7 @@ Total de mortes registradas em 2017: 1394
               <div class="col l12 s12 center-align">
                   <h5>Quer colaborar com nosso projeto? Acesse nosso GitHub</h5>
                   <div class="center-align">
-                      <a href="https://github.com/jcpsantos/projeto_safe_salvador" ><img src="img/icons8-github-2-filled-100.png"></a>
+                      <a href="https://github.com/jcpsantos/projeto_safe_salvador" ><img alt="Github" src="img/icons8-github-2-filled-100.png"></a>
                   </div>
               </div>
           </div>
