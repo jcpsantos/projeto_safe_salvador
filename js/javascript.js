@@ -48,6 +48,9 @@ $(document).ready(function(){
             formatter: function(val) {
                 return val 
             }
+        },
+        title:{
+            text: 'Fonte: SSP/BA'
         }
     },
     yaxis: {
@@ -112,6 +115,9 @@ var options = {
   },
   xaxis: {
       categories: ['2014', '2015', '2016', '2017'],
+      title:{
+        text: 'Fonte: SSP/BA'
+    }
   },
   yaxis: {
       title: {
@@ -170,6 +176,9 @@ var options = {
   },
   xaxis: {
       categories: ['2014', '2015', '2016', '2017'],
+      title:{
+        text: 'Fonte: SSP/BA'
+    }
   },
   yaxis: {
       title: {
@@ -231,6 +240,9 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                         colors: colors,
                         fontSize: '14px'
                     }
+                },
+                title:{
+                    text: 'Fonte: SSP/BA'
                 }
             }
         }
@@ -276,6 +288,9 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                         colors: colors,
                         fontSize: '14px'
                     }
+                },
+                title:{
+                    text: 'Fonte: SSP/BA'
                 }
             }
         }
@@ -321,6 +336,9 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                         colors: colors,
                         fontSize: '14px'
                     }
+                },
+                title:{
+                    text: 'Fonte: SSP/BA'
                 }
             }
         }
@@ -365,6 +383,9 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                         colors: colors,
                         fontSize: '14px'
                     }
+                },
+                title:{
+                    text: 'Fonte: SSP/BA'
                 }
             }
         }
@@ -410,6 +431,9 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                         colors: colors,
                         fontSize: '14px'
                     }
+                },
+                title:{
+                    text: 'Fonte: SSP/BA'
                 }
             }
         }
@@ -455,7 +479,10 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                  colors: colors,
                  fontSize: '14px'
              }
-         }
+         },
+         title:{
+            text: 'Fonte: SSP/BA'
+        }
      }
  }
 
@@ -499,7 +526,10 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                  colors: colors,
                  fontSize: '14px'
              }
-         }
+         },
+         title:{
+            text: 'Fonte: SSP/BA'
+        }
      }
  }
 
@@ -543,7 +573,10 @@ var colors = ['#775DD0', '#546E7A', '#26a69a', '#D10CE8'];
                  colors: colors,
                  fontSize: '14px'
              }
-         }
+         },
+         title:{
+            text: 'Fonte: SSP/BA'
+        }
      }
  }
 

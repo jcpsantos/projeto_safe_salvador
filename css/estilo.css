@@ -62,11 +62,12 @@ a.link:hover{
     }
 }
 
-@media screen and (min-height: 700px) and (max-height: 750px){
+@media screen and (min-height: 700px) and (max-height: 799px){
     .apresentacao{
-        margin-top: 700px;
+        margin-top: 100vh;
     }
 }
+
 
 @media screen and (min-height: 800px) and (max-height: 850px){
     .apresentacao{
@@ -86,6 +87,13 @@ a.link:hover{
     }
 }
 
+@media screen and (min-height: 1051px) and (max-height: 1100px){
+    .apresentacao{
+        margin-top: 1050px;
+    }
+}
+
+
 @media screen and (min-height: 1350px) and (max-height: 1400px){
     .apresentacao{
         margin-top: 100vh;
@@ -98,7 +106,7 @@ a.link:hover{
     }
 }
 
-@media screen and (min-height: 1250px) and (max-height: 1300px){
+@media screen and (min-height: 1200px) and (max-height: 1300px){
     .apresentacao{
         margin-top: 100vh;
     }
